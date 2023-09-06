@@ -1,0 +1,25 @@
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+
+#cv2.canny(img, min_val. max_val, kernal_size, L2gradient=False(default))
+img = cv2.imread('orginal.JPG', 0)
+image = cv2.Canny(img, 100, 200, 5)
+#print(img.dtype)
+plt.subplot(121)
+plt.imshow(img, cmap='gray')
+plt.axis('off')
+plt.xticks([])
+plt.yticks([])
+plt.title('orginal image')
+
+plt.subplot(122)
+plt.imshow(image, cmap='gray')
+plt.xticks([])
+plt.yticks([])
+plt.axis('off')
+plt.title('Caany dection')
+
+plt.show()
+new = np.concatenate((img, image), axis=1)
+cv2.imwrite('combined.jpg', new)
