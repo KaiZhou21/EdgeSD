@@ -1,5 +1,7 @@
 # EdgeSD
 
+EdgeSD by Kai Zhou, Wen Wu, and Yanli Shao
+
 Training and testing:
 
 SBU: https://pan.baidu.com/s/1iEOOlSyYDHwcZ3LdkPVlQQ (tc01)
